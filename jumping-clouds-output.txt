@@ -1,0 +1,1 @@
+Required jumps for n=6 and c=[0, 0, 0, 0, 1, 0]: 3
