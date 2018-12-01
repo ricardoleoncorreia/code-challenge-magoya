@@ -1,18 +1,15 @@
 from math import floor
 from itertools import groupby
     
-# Sock merchant
 def sockMerchant(n, ar):
-
-
-    # Calculate sock pairs
+    """
+    Calculate sock pairs that John can sell
+    """
     socks_pairs = 0
     sock_colors = set(ar)
     for color in sock_colors:
         socks_pairs += floor(ar.count(color) / 2)
-        
     return socks_pairs
-
 
 
 if __name__ == '__main__':

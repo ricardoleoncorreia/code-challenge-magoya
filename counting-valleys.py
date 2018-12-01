@@ -1,13 +1,7 @@
-import math
-import os
-import random
-import re
-import sys
-
-# Complete the countingValleys function below.
 def countingValleys(n, s):
-    
-    # Count valleys
+    """
+    Count the number of valleys Gary traversed
+    """
     not_ends_at_sea_level = True
     level = 0
     valleys_number = 0
@@ -23,6 +17,7 @@ def countingValleys(n, s):
         else:
             not_ends_at_sea_level = False
     return valleys_number
+
 
 if __name__ == '__main__':
     fptr = open('counting-valleys-output.txt', 'w')
@@ -40,9 +35,3 @@ if __name__ == '__main__':
     while set(s) != {'D', 'U'} or len(s) != n:
         print('\nPath length must be {} and it must contain only "D" and "U"'.format(n))
         s = input('Path description (string with "U" and "D"): ')
-
-    result = countingValleys(n, s)
-
-    fptr.write('For n={} and s={}, the result: {} valley(s)'.format(n, s, result))
-
-    fptr.close()
