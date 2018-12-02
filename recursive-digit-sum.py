@@ -14,14 +14,14 @@ def superDigit(n, k):
 
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    fptr = open('recursive-digit-sum.txt', 'w')
 
     nk = input('Insert values for n (between 1 and 10^100000) and k (between 1 and 10^5): ').split()
 
+    # Checking constrains
     while int(nk[0]) < 1 or int(nk[0]) >= 10**100000 or int(nk[1]) < 1 or int(nk[1]) > 10**5:
-        print('\nThe values must be 1 <= n < 10^100000 and 1 <= k <= 10^5)')
+        print('\nThe values must be 1 <= n < 10^100000 and 1 <= k <= 10^5')
         nk = input('Insert values for n (between 1 and 10^100000) and k (between 1 and 10^5): ').split()
-
 
     n = nk[0]
 

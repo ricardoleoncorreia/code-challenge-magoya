@@ -19,11 +19,21 @@ def repeatedString(s, n):
 
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    fptr = open('repeated-string-output.txt', 'w')
 
-    s = input()
+    s = input('String to repeat (no more than 100 characters): ')
 
-    n = int(input())
+    # Checking constrains
+    while len(s) < 1 or len(s) > 100:
+        print('\nThe length of s must be between 1 and 100')
+        s = input('String to repeat (no more than 100 characters): ')
+
+    n = int(input('Number of characters to consider (no more than 10^12): '))
+
+    # Checking constrains
+    while n < 1 or n > 10**12:
+        print('\nThe number of characters to consider cannot be more than 10^12')
+        n = int(input('Number of characters to consider (no more than 10^12): '))
 
     result = repeatedString(s, n)
 
