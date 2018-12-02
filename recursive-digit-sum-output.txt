@@ -1,0 +1,1 @@
+The super digit for n=123 and k=3 is 9

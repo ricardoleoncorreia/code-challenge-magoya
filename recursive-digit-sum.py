@@ -14,7 +14,7 @@ def superDigit(n, k):
 
 
 if __name__ == '__main__':
-    fptr = open('recursive-digit-sum.txt', 'w')
+    fptr = open('recursive-digit-sum-output.txt', 'w')
 
     nk = input('Insert values for n (between 1 and 10^100000) and k (between 1 and 10^5): ').split()
 
@@ -29,6 +29,6 @@ if __name__ == '__main__':
 
     result = superDigit(n, k)
 
-    fptr.write(str(result) + '\n')
+    fptr.write('The super digit for n={} and k={} is {}'.format(n, k, result))
 
     fptr.close()
