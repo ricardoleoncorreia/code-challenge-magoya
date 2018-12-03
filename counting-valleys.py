@@ -40,3 +40,9 @@ if __name__ == '__main__':
     while set(s) != {'D', 'U'} or len(s) != n:
         print('\nPath length must be {} and it must contain only "D" and "U"'.format(n))
         s = input('Path description (string with "U" and "D"): ')
+    
+    result = countingValleys(n, s)
+
+    fptr.write('Number of valleys for n={} and s={}: {}'.format(n, s, result))
+
+    fptr.close()

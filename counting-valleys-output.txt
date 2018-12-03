@@ -1,1 +1,1 @@
-For n=8 and s=DUDUDUDU, there are 4 valleys
+Number of valleys for n=8 and s=UDDDUDUU: 1

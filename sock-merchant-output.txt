@@ -1,1 +1,1 @@
-For n=8 and ar=[1, 2, 5, 4, 1, 2, 5, 4], John can sell 4 pairs
+For n=9 and ar=[10, 20, 20, 10, 10, 30, 50, 10, 20], John can sell 3 pairs
